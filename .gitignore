@@ -1,5 +1,7 @@
 files/out/*.csv
 
+files/out/verimind_egemaps_v2_lld
+
 venv
 
 # Created by .ignore support plugin (hsz.mobi)

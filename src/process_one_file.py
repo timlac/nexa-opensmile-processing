@@ -6,8 +6,8 @@ from config import ROOT_DIR
 
 # set opensmile parameters
 smile = opensmile.Smile(
-    feature_set=opensmile.FeatureSet.eGeMAPSv02,
-    feature_level=opensmile.FeatureLevel.Functionals,
+    feature_set=opensmile.FeatureSet.eGeMAPS,
+    feature_level=opensmile.FeatureLevel.LowLevelDescriptors,
 )
 
 input_path = os.path.join(ROOT_DIR, 'files/example_audio/file_example_WAV_1MG.wav')
@@ -17,5 +17,5 @@ output_path = os.path.join(ROOT_DIR, 'files/out/file_example_WAV_1MG.csv')
 df = smile.process_file(input_path)
 
 # save csv
-df.to_csv(output_path, index=False)
+df.to_csv(output_path)
 

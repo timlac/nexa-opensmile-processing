@@ -14,12 +14,12 @@ def get_filename(filepath):
 
 
 smile = opensmile.Smile(
-    feature_set=opensmile.FeatureSet.ComParE_2016,
-    feature_level=opensmile.FeatureLevel.LowLevelDescriptors_Deltas,
+    feature_set=opensmile.FeatureSet.eGeMAPSv02,
+    feature_level=opensmile.FeatureLevel.LowLevelDescriptors,
 )
 
 # all .wav files in this dir will be processed
-input_dir = os.path.join(ROOT_DIR, 'files/example_audio/**/*.wav')
+input_dir = os.path.join(ROOT_DIR, '/home/tim/Downloads/klippta_ljudfiler/**/*.wav')
 
 # all the output .csv files will be put in this directory, under the same name
 output_dir = os.path.join(ROOT_DIR, 'files/out/')
